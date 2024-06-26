@@ -76,6 +76,9 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="<?= base_url('ofertaeducativa'); ?>">OFERTA EDUCATIVA</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="<?= base_url('bibliotecadigital'); ?>">BIBLIOTECA DIGITAL</a>
+                        </li>
 
                         <!--
                         <li class="nav-item dropdown">

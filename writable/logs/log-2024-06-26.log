@@ -1,0 +1,180 @@
+ERROR - 2024-06-26 02:26:39 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\en mantenimiento\webupn\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\en mantenimiento\webupn\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'webupn', 3306, '', 0)
+#1 D:\en mantenimiento\webupn\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\en mantenimiento\webupn\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\en mantenimiento\webupn\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\en mantenimiento\webupn\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\en mantenimiento\webupn\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\en mantenimiento\webupn\app\Controllers\FrontendController.php(29): CodeIgniter\BaseModel->findAll()
+#7 D:\en mantenimiento\webupn\system\CodeIgniter.php(941): App\Controllers\FrontendController->index()
+#8 D:\en mantenimiento\webupn\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FrontendController))
+#9 D:\en mantenimiento\webupn\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\en mantenimiento\webupn\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\en mantenimiento\webupn\system\Commands\Server\rewrite.php(47): require_once('D:\\en mantenimi...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\en mantenimiento\webupn\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\en mantenimiento\webupn\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\en mantenimiento\webupn\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\en mantenimiento\webupn\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\en mantenimiento\webupn\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\en mantenimiento\webupn\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\en mantenimiento\webupn\app\Controllers\FrontendController.php(29): CodeIgniter\BaseModel->findAll()
+#6 D:\en mantenimiento\webupn\system\CodeIgniter.php(941): App\Controllers\FrontendController->index()
+#7 D:\en mantenimiento\webupn\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FrontendController))
+#8 D:\en mantenimiento\webupn\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\en mantenimiento\webupn\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\en mantenimiento\webupn\system\Commands\Server\rewrite.php(47): require_once('D:\\en mantenimi...')
+#11 {main}
+CRITICAL - 2024-06-26 02:26:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `carousel`
+WHERE `estado` = :estado:', [...], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\FrontendController.php(29): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\FrontendController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FrontendController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\en mantenimiento\\webupn\\public\\index.php')
+ERROR - 2024-06-26 02:26:46 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\en mantenimiento\webupn\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\en mantenimiento\webupn\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'webupn', 3306, '', 0)
+#1 D:\en mantenimiento\webupn\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\en mantenimiento\webupn\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\en mantenimiento\webupn\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\en mantenimiento\webupn\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\en mantenimiento\webupn\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\en mantenimiento\webupn\app\Controllers\FrontendController.php(29): CodeIgniter\BaseModel->findAll()
+#7 D:\en mantenimiento\webupn\system\CodeIgniter.php(941): App\Controllers\FrontendController->index()
+#8 D:\en mantenimiento\webupn\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FrontendController))
+#9 D:\en mantenimiento\webupn\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\en mantenimiento\webupn\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\en mantenimiento\webupn\system\Commands\Server\rewrite.php(47): require_once('D:\\en mantenimi...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\en mantenimiento\webupn\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\en mantenimiento\webupn\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\en mantenimiento\webupn\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\en mantenimiento\webupn\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\en mantenimiento\webupn\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\en mantenimiento\webupn\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\en mantenimiento\webupn\app\Controllers\FrontendController.php(29): CodeIgniter\BaseModel->findAll()
+#6 D:\en mantenimiento\webupn\system\CodeIgniter.php(941): App\Controllers\FrontendController->index()
+#7 D:\en mantenimiento\webupn\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FrontendController))
+#8 D:\en mantenimiento\webupn\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\en mantenimiento\webupn\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\en mantenimiento\webupn\system\Commands\Server\rewrite.php(47): require_once('D:\\en mantenimi...')
+#11 {main}
+CRITICAL - 2024-06-26 02:26:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `carousel`
+WHERE `estado` = :estado:', [...], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\FrontendController.php(29): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\FrontendController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FrontendController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\en mantenimiento\\webupn\\public\\index.php')
+ERROR - 2024-06-26 02:27:03 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\en mantenimiento\webupn\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\en mantenimiento\webupn\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'webupn', 3306, '', 0)
+#1 D:\en mantenimiento\webupn\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\en mantenimiento\webupn\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\en mantenimiento\webupn\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\en mantenimiento\webupn\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\en mantenimiento\webupn\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\en mantenimiento\webupn\app\Controllers\FrontendController.php(29): CodeIgniter\BaseModel->findAll()
+#7 D:\en mantenimiento\webupn\system\CodeIgniter.php(941): App\Controllers\FrontendController->index()
+#8 D:\en mantenimiento\webupn\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FrontendController))
+#9 D:\en mantenimiento\webupn\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\en mantenimiento\webupn\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\en mantenimiento\webupn\system\Commands\Server\rewrite.php(47): require_once('D:\\en mantenimi...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\en mantenimiento\webupn\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\en mantenimiento\webupn\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\en mantenimiento\webupn\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\en mantenimiento\webupn\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\en mantenimiento\webupn\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\en mantenimiento\webupn\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\en mantenimiento\webupn\app\Controllers\FrontendController.php(29): CodeIgniter\BaseModel->findAll()
+#6 D:\en mantenimiento\webupn\system\CodeIgniter.php(941): App\Controllers\FrontendController->index()
+#7 D:\en mantenimiento\webupn\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FrontendController))
+#8 D:\en mantenimiento\webupn\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\en mantenimiento\webupn\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\en mantenimiento\webupn\system\Commands\Server\rewrite.php(47): require_once('D:\\en mantenimi...')
+#11 {main}
+CRITICAL - 2024-06-26 02:27:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `carousel`
+WHERE `estado` = :estado:', [...], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\FrontendController.php(29): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\FrontendController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FrontendController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\en mantenimiento\\webupn\\public\\index.php')
+ERROR - 2024-06-26 02:27:14 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\en mantenimiento\webupn\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\en mantenimiento\webupn\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'webupn', 3306, '', 0)
+#1 D:\en mantenimiento\webupn\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\en mantenimiento\webupn\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\en mantenimiento\webupn\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\en mantenimiento\webupn\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\en mantenimiento\webupn\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\en mantenimiento\webupn\app\Controllers\FrontendController.php(29): CodeIgniter\BaseModel->findAll()
+#7 D:\en mantenimiento\webupn\system\CodeIgniter.php(941): App\Controllers\FrontendController->index()
+#8 D:\en mantenimiento\webupn\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FrontendController))
+#9 D:\en mantenimiento\webupn\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\en mantenimiento\webupn\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\en mantenimiento\webupn\system\Commands\Server\rewrite.php(47): require_once('D:\\en mantenimi...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\en mantenimiento\webupn\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\en mantenimiento\webupn\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\en mantenimiento\webupn\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\en mantenimiento\webupn\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\en mantenimiento\webupn\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\en mantenimiento\webupn\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\en mantenimiento\webupn\app\Controllers\FrontendController.php(29): CodeIgniter\BaseModel->findAll()
+#6 D:\en mantenimiento\webupn\system\CodeIgniter.php(941): App\Controllers\FrontendController->index()
+#7 D:\en mantenimiento\webupn\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FrontendController))
+#8 D:\en mantenimiento\webupn\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\en mantenimiento\webupn\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\en mantenimiento\webupn\system\Commands\Server\rewrite.php(47): require_once('D:\\en mantenimi...')
+#11 {main}
+CRITICAL - 2024-06-26 02:27:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `carousel`
+WHERE `estado` = :estado:', [...], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\FrontendController.php(29): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\FrontendController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FrontendController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\en mantenimiento\\webupn\\public\\index.php')

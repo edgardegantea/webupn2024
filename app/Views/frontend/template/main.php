@@ -153,14 +153,14 @@
             width: 50px;
             height: 50px;
             text-align: center;
-            line-height: 30px; /* Ajusta según el alto del botón */
-            box-shadow: #0a0e14;
+            line-height: 30px;
         }
 
         .footer {
-            background-color: #ddd;
-            height: 150px;
-            padding-top: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
+            height: auto;
+            padding-top: 30px;
             width: 100%;
         }
 
@@ -256,27 +256,39 @@
     </div>
 
 
+    <!--
     <div class="contenedor-imagen">
         <a href="<?= base_url('ofertaeducativa') ?>">
             <img src="<?= base_url('assets/img/mascota/buhabuho.png') ?>" alt="Mascotas">
         </a>
     </div>
-
+-->
 
     <button id="boton-regresar-arriba"><i class="fas fa-arrow-up text-light border-0"></i></button>
 
 
     <!-- FOOTER -->
-    <footer class="container-fluid footer">
+    <footer class="footer mt-5">
         <div class="row">
             <div class="col-md-4">
-
+                <ul class="list-unstyled">
+                    <li>Enlaces de interés</li>
+                </ul>
             </div>
 
-            <div class="col-md-4 d-flex justify-content-center">
-                <a class="me-5" href="https://www.facebook.com/upn212teziutlan" target="_blank"><i
-                            class="fa-brands fa-facebook fa-3x"></i></a>
-                <a href="" class="me-5"><i class="fa-brands fa-youtube fa-3x text-danger"></i></a>
+            <div class="col-md-4">
+                <ul class="list-unstyled">
+                    <li>
+                        <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.facebook.com/upn212teziutlan" target="_blank"><i
+                                    class="fa-brands fa-facebook fa-2x"></i> UPN 212 Teziutlán</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@upn212teziutlan8" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" target="_blank"><i class="fa-brands fa-youtube fa-2x text-danger"></i> UPN 212 TEZIUTLÁN
+                        </a>
+                    </li>
+                </ul>
+
+
             </div>
 
             <div class="col-md-4">
@@ -284,7 +296,7 @@
                     <li>
                         <a href="#" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Política de privacidad</a>
                     </li>
-                    <li class="text-center">Developed by edegantea for UPN212-Teziutlán. <?= date('Y') ?>.</li>
+                    <li class="">Developed by edegantea for UPN212-Teziutlán. <?= date('Y') ?>.</li>
                 </ul>
             </div>
 

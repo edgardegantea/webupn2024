@@ -26,6 +26,7 @@ $routes->get('oe_lpe', 'OfertaEducativaController::oe_lpe');
 $routes->get('oe_mmems', 'OfertaEducativaController::oe_mems');
 
 $routes->get('moodle', 'FrontendController::moodle');
+$routes->get('bibliotecadigital', 'FrontendController::bibliotecadigital');
 $routes->get('contacto', 'FrontendController::contacto');
 
 

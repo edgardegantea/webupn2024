@@ -69,4 +69,10 @@ class FrontendController extends BaseController
         return view('frontend/moodle');
     }
 
+
+    public function bibliotecadigital()
+    {
+        return view('frontend/bibliotecadigital');
+    }
+
 }
