@@ -7,7 +7,7 @@
         padding-top: 56.25%; /* Aspect ratio 16:9 */
         overflow: hidden;
         position: relative;
-        height: 650px;
+        height: 600px;
     }
 
     .carousel-img img {
