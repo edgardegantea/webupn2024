@@ -28,6 +28,18 @@
 -->
 
 <div class="fondo">
+
+    <div class="row tarjeta d-flex align-items-center text-center">
+        <div class="col-md-6">
+
+        </div>
+
+        <div class="col-md-6 bg-dark p-2 text-white" style="--bs-bg-opacity: .7;">
+        <h1>¡Bienvenidos al campus virtual!</h1>
+        </div>
+    </div>
+
+<!--
     <div class="row tarjeta d-flex align-items-center text-center">
         <div class="col-md-6">
 
@@ -54,6 +66,26 @@
 
 
     </div>
+    -->
+</div>
+
+
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-3 p-5">
+        <div class="card">
+            <a href="https://campus-virtual.upn212teziutlan.edu.mx/login/index.php" class="btn btn-primary mb-2"
+               target="_blank">Licenciatura</a>
+        </div>
+    </div>
+
+    <div class="col-md-3 p-5">
+        <div class="card">
+            <a href="https://campus-virtual.upn212teziutlan.edu.mx" class="btn btn-primary mb-2"
+               target="_blank">Maestría</a>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
 </div>
 
 
