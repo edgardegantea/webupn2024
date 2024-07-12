@@ -18,6 +18,27 @@
     .tarjeta {
         width: 80%;
     }
+
+
+    .fondo2 {
+        background-image: url(<?php echo base_url('assets/img/moodle/imagen1.png'); ?>);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tarjeta2 {
+        width: 80%;
+    }
+
+
+
+
+
 </style>
 
 
@@ -30,12 +51,15 @@
 <div class="fondo">
 
     <div class="row tarjeta d-flex align-items-center text-center">
-        <div class="col-md-6">
-
-        </div>
-
-        <div class="col-md-6 bg-dark p-2 text-white" style="--bs-bg-opacity: .7;">
-        <h1>¡Bienvenidos al campus virtual!</h1>
+        <div class="col-md-6"></div>
+        <div class="col-md-6 text-center bg-white br-3 p-2" style="--bs-bg-opacity: .7;">
+            <img class="p-3"
+                width="400px" 
+                src="<?php echo base_url('assets/img/moodle/logoeva.png'); ?>" 
+                alt="Campus virtual"  
+                loading="lazy" 
+                onerror="this.onerror=null; this.src='<?php echo base_url('assets/img/moodle/logoeva.png'); ?>';"
+            >
         </div>
     </div>
 
@@ -44,7 +68,6 @@
         <div class="col-md-6">
 
         </div>
-
         <div class="col-md-6 bg-dark p-2" style="--bs-bg-opacity: .7;">
             <div class="row">
                 <h1 class="text-white">Plataforma educativa</h1>
@@ -70,7 +93,7 @@
 </div>
 
 
-<div class="row">
+<!--<div class="row">
     <div class="col-md-3"></div>
     <div class="col-md-3 p-5">
         <div class="card">
@@ -86,6 +109,53 @@
         </div>
     </div>
     <div class="col-md-3"></div>
+</div>-->
+
+
+<div class="album py-5 bg-body-tertiary">
+    <div class="container text-center">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col-md-6">
+                <div class="card shadow-sm text-center"> <img class="card-img-top" 
+                        src="<?php echo base_url('assets/img/fotos/fotolicenciatura.jpg') ?>" 
+                        alt="Licenciatura en Educación e Innovación Pedagógica" 
+                        style="object-fit: cover;" 
+                        width="100%" 
+                        height="225">
+                    
+                    <div class="card-body bg-blue text-center"> 
+                        <p><?php echo '&nbsp'; ?></p>
+                        <p class="text-center">Licenciatura en Educación e Innovación Pedagógica</p>
+                        <a href="https://campus-virtual-212.upn212teziutlan.edu.mx/login/index.php" 
+                        target="_blank" 
+                        class="btn btn-primary">Ingresar al sitio</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="card shadow-sm text-center">
+                    <img class="card-img-top" 
+                        src="<?php echo base_url('assets/img/fotos/fotomaestria.jpg') ?>" 
+                        alt="Licenciatura en Educación e Innovación Pedagógica" 
+                        style="object-fit: cover;" 
+                        width="100%" 
+                        height="225">
+                    
+                    <div class="card-body text-center">
+                            <p class="text-center">Maestría en Educación Básica</p>
+                            <p class="text-center">Maestría en educación Media Superior</p>
+                        
+                                <a href="https://campus-virtual.upn212teziutlan.edu.mx" target="_blank" class="btn btn-primary">Ingresar al sitio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
@@ -121,9 +191,10 @@
 </form>-->
 
 
-<div>
-    <img class="img-fluid" src="<?php echo base_url('assets/img/moodle/imagen1.png') ?>" alt="">
-    <div class="textoabajo">
+
+<div class="fondo2">
+    
+    <div class="text-white">
         <h5>Atención a la Comunidad Universitaria</h5>
 
         <div class="row mt-5">
@@ -138,8 +209,6 @@
                 <h6><span class="fas fa-calendar-day shadow-sm"></span> Lunes a viernes de 12:00 a 20:00 hrs.</h6>
             </div>
         </div>
-
-
     </div>
 </div>
 
